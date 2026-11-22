@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conference Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <form>
+
+    <h1>Conference Registration</h1>
+
+    <h2>Register for our Conference</h2>
+    <p>Join us for an exciting conference and connect with students, researchers, and professionals.</p>
+
+    <h3>Personal Information</h3>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="phone Number">Phone Number:</label>
+    <input type="tel" placeholder="Enter your phone number" required>
+
+    <label for="collegename">College Name:</label>
+    <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" name="department" placeholder="Enter your department" required>
+
+    <label for="participation">Participation Type:</label>
+
+    <select id="participation" name="participation" required>
+        <option value="">Select participation type</option>
+        <option value="student">Student</option>
+        <option value="researcher">Researcher</option>
+        <option value="faculty">Faculty</option>
+        <option value="professional">Professional</option>
+    </select>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" required> Male
+    <input type="radio" id="female" name="gender" value="Female" required> Female
+    <input type="radio" id="other" name="gender" value="Other" required> Other
+
+    <h3>Conference Details</h3>
+
+    <p>Conference Date: December 15, 2026</p>
+
+    <p>Venue: RMD Engineering College</p>
+
+    <label for="preferredsession">Preferred Session:</label>
+    <select id="session" name="session" required>
+        <option value="">Select a session</option>
+        <option value="morning">Morning Session</option>
+        <option value="afternoon">Afternoon Session</option>
+        <option value="evening">Evening Session</option>
+    </select>
+
+    <label for="accommodationrequired">Accommodation Required</label>
+    <input type="radio" id="accommodationYes" name="accommodation" value="Yes" required> Yes
+    <input type="radio" id="accommodationNo" name="accommodation" value="No" required> No
+
+    <label for="additionalcomments">Additional Comments:</label>
+    <textarea name="comments" rows="4" cols="40" placeholder="Write your comments here..."></textarea>
+
+    <br><br>
+    <button type="submit">Register Now</button>
+    <button type="reset">Clear Form</button>
+</form>
+</div>
+</body>
+</html>
